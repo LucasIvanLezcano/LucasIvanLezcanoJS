@@ -58,7 +58,7 @@ function cargarProductosCarrito(){
         contenedorCarritoVacio.classList.remove("disabled");
         contenedorCarritoProductos.classList.add("disabled");
         contenedorCarritoAcciones.classList.add("disabled");
-        contenedorCarritoComprado.classList.add("disabled");
+        
     }
 
     
@@ -91,11 +91,11 @@ function eliminarProdCarrito(e) {
 botonVaciar.addEventListener("click", vaciarCarrito);
 
 function vaciarCarrito(){
-    
     productosCarrito.length = 0;
-    localStorage.setItem("productos-en-carrito", JSON.stringify(productosCarrito))
-    cargarProductosCarrito
+    localStorage.setItem("productos-en-carrito", JSON.stringify(productosCarrito));
+    cargarProductosCarrito(); 
 }
+
 
 
 function actualizarTotal() {
@@ -105,11 +105,29 @@ function actualizarTotal() {
 
 
 
-botonComprar.addEventListener("click", comprarCarrito);;
+botonComprar.addEventListener("click", comprarCarrito);
 
 function comprarCarrito() {
 
     productosCarrito.length = 0;
     localStorage.setItem("productos-en-carrito", JSON.stringify(productosCarrito));
+    Toastify({
+        text: "Gracias por tu compra! Recibirás el pedido en los proximos dos dias habiles.",
+        duration: 2000,
+        gravity: 'top',
+        position: 'right',
+        close: true,
+        style: {
+            background: "linear-gradient(to right, #557e9e,#d2cfb0)",
+        },
+        offset: {
+            x: 150, 
+            y: 110 
+        },
+    }).showToast();
+
+
+
+    cargarProductosCarrito();
     
 }

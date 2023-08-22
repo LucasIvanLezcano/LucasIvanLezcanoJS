@@ -1,6 +1,13 @@
 
-@import url('https://fonts.googleapis.com/css2?family=Advent+Pro&display=swap');
 
+@import url('https://fonts.googleapis.com/css2? family= Advent+Pro & familia= Inter:peso@100 & display=swap');
+
+
+/* 
+  font-family: 'Advent Pro', sans-serif;
+  font-family: 'Inter', sans-serif; */
+
+  
 :root {
 
     --clr-main: #557e9e;
@@ -47,6 +54,7 @@ h1, h2, h4, h5, h6, p, a, input, ul{
 }
 
 .producto-titulo {
+    
     font-size: 1rem;
 }
 
@@ -71,27 +79,22 @@ h1, h2, h4, h5, h6, p, a, input, ul{
 /* menu */
 
 .boton-menu {
+    
     background-color: transparent;
     color: var(--clr-main);
 }
 
-
-
+.boton_1{
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    color:var(--clr-main); ;
+}
 
 
 /* carrito */
 
-
-
-
-
-/* .carrito-productos {
-    display: flex;
-    flex-direction: column;
-    gap: 1rem;
-} */
-
 .carrito-producto {
+    font-family:'Advent Pro', sans-serif;
+    font-size:medium;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -121,18 +124,9 @@ h1, h2, h4, h5, h6, p, a, input, ul{
 
 .carrito-acciones {
     display: flex;
-    justify-content: space-between;
+    justify-content:space-evenly
 }
 
-.carrito-acciones-vaciar {
-    border: 0;
-    background-color: var(--clr-gray);
-    padding: 1rem;
-    border-radius: 1rem;
-    color: var(--clr-main);
-    text-transform: uppercase;
-    cursor: pointer;
-}
 
 
 .carrito-acciones-derecha {
@@ -141,6 +135,7 @@ h1, h2, h4, h5, h6, p, a, input, ul{
 }
 
 .carrito-acciones-total {
+    font-family:'Advent Pro', sans-serif;
     display: flex;
     background-color: var(--clr-white);
     padding: 1rem;
@@ -151,7 +146,8 @@ h1, h2, h4, h5, h6, p, a, input, ul{
     gap: 1rem;
 }
 
-.carrito-acciones-comprar {
+.carrito-boton{
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     border: 0;
     background-color: var(--clr-white);
     color: var(--clr-main);
@@ -165,9 +161,18 @@ h1, h2, h4, h5, h6, p, a, input, ul{
 }
 
 
-.carrito-acciones-comprar:hover{
+.carrito-boton:hover{
     background-color: var(--clr-main);
     color: var(--clr-white);
 }
 
+.seguir-comprando{
+    text-decoration:none;
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
 
+
+
+.disabled {
+    display: none;
+}
