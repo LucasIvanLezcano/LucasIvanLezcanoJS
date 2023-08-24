@@ -1,11 +1,7 @@
 
 
-@import url('https://fonts.googleapis.com/css2? family= Advent+Pro & familia= Inter:peso@100 & display=swap');
 
 
-/* 
-  font-family: 'Advent Pro', sans-serif;
-  font-family: 'Inter', sans-serif; */
 
   
 :root {
@@ -26,6 +22,7 @@ h1, h2, h4, h5, h6, p, a, input, ul{
     color: var(--clr-white);
     display: flex;
     justify-content: center;
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif; ;
 }
 
 
@@ -93,7 +90,7 @@ h1, h2, h4, h5, h6, p, a, input, ul{
 /* carrito */
 
 .carrito-producto {
-    font-family:'Advent Pro', sans-serif;
+    
     font-size:medium;
     display: flex;
     flex-direction: column;
@@ -135,7 +132,7 @@ h1, h2, h4, h5, h6, p, a, input, ul{
 }
 
 .carrito-acciones-total {
-    font-family:'Advent Pro', sans-serif;
+    
     display: flex;
     background-color: var(--clr-white);
     padding: 1rem;
@@ -176,3 +173,11 @@ h1, h2, h4, h5, h6, p, a, input, ul{
 .disabled {
     display: none;
 }
+
+
+form{
+    font-family:sans-serif;
+    color: #557e9e;
+    font-size: large;
+}
+

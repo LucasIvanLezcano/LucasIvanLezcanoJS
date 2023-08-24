@@ -34,7 +34,7 @@ botonesCategorias.forEach(boton => {
     boton.addEventListener("click", () => {
         const categoriaSeleccionada = boton.id;
         if (categoriaSeleccionada === "todos") {
-            cargarProductos(productos); // Mostrar todos los productos
+            cargarProductos(productos); 
         } else {
             const productosFiltrados = productos.filter(producto => producto.categoria === categoriaSeleccionada);
             cargarProductos(productosFiltrados);
@@ -42,7 +42,7 @@ botonesCategorias.forEach(boton => {
     });
 });
 
-// Cargar todos los productos al inicio
+
 cargarProductos(productos);
 
 function actualizarBotonesAgregar() {

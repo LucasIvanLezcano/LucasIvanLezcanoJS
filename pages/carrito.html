@@ -30,15 +30,13 @@
                     </ul>
         </div>
     </nav>
-
-
+    
     <main>
         <h2 class="titulo-principal">Carrito</h2>
         <div class="contenedor-carrito">
             <p id="carrito-vacio" class="carrito-vacio">Tu carrito está vacío</p>
     
-            <div id="carrito-productos" class="carrito-productos disabled"></div>
-    
+            <div id="carrito-productos" class="carrito-productos disabled"></div>    
             <div id="carrito-acciones" class="carrito-acciones disabled">
                 <div class="carrito-acciones-izquierda">
                     <button id="carrito-acciones-vaciar" class="carrito-boton">Vaciar carrito</button>
@@ -57,7 +55,29 @@
     </main>
     
 
-
+    <form id="formulario" class="disabled">
+        <label for="nombre" class="form-label">Nombre:</label>
+        <input type="text" id="nombre" required>
+        <br>
+        
+        <label for="apellido" class="form-label">Apellido:</label>
+        <input type="text" id="apellido" required>
+        <br>
+        
+        <label for="localidad" class="form-label">Localidad:</label>
+        <input type="text" id="localidad" required>
+        <br>
+        
+        <label for="calle" class="form-label">Calle:</label>
+        <input type="text" id="calle" required>
+        <br>
+        
+        <label for="altura" class="form-label">Altura:</label>
+        <input type="number" id="altura" required>
+        <br>
+        
+        <button type="submit" class="carrito-boton" >Enviar</button>
+    </form>
 
 
 
